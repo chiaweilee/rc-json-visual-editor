@@ -1,0 +1,58 @@
+{
+  "string": "string",
+  "long string": "long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long string",
+  "number": 2020,
+  "date": "2020-02-02",
+  "date2": "2020/02/02",
+  "date3": "2020-2/2",
+  "boolean": true,
+  "null": null,
+  "array": [
+    "string",
+    "long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long string",
+    2020,
+    "2020-02-02",
+    true,
+    null,
+    [
+      "string",
+      "long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long string",
+      2020,
+      "2020-02-02",
+      true,
+      null
+    ],
+    {
+      "string": "string",
+      "long string": "long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long string",
+      "number": 2020,
+      "date": "2020-02-02",
+      "boolean": true,
+      "null": null
+    }
+  ],
+  "object": {
+    "string": "string",
+    "long string": "long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long string",
+    "number": 2020,
+    "date": "2020-02-02",
+    "boolean": true,
+    "object-son": {
+      "string": "string",
+      "long string": "long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long string",
+      "number": 2020,
+      "date": "2020-02-02",
+      "boolean": true,
+      "null": null
+    },
+    "null": null,
+    "array-son": [
+      "string",
+      "long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long string",
+      2020,
+      "2020-02-02",
+      true,
+      null
+    ]
+  }
+}

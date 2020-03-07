@@ -1,0 +1,27 @@
+.json-tree {
+  :global {
+    .ant-tree-node-content-wrapper {
+      height: auto !important;
+      width: auto !important;
+      cursor: default !important;
+      background-color: inherit !important;
+      &:hover {
+        background-color: inherit !important;
+      }
+    }
+  }
+}
+
+.json-tree-item {
+  .json-tree-item-label,
+  .json-tree-item-content {
+    display: inline-block;
+  }
+  .json-tree-item-label {
+    vertical-align: top;
+    &:after {
+      content: ':';
+      margin: 0 8px 0 2px;
+    }
+  }
+}
