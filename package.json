@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "description": "Visual JSON Editor for React base on Ant-Design.",
   "scripts": {
-    "prepublishOnly": "npm test && npm run build",
+    "prepublishOnly": "npm run build",
     "lint": "npm run lint:es && npm run lint:ts",
     "lint:es": "eslint --ext .js --ext .jsx . --fix",
     "lint:ts": "tslint \"src/**/*.ts\" \"src/**/*.tsx\" --fix",
