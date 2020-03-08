@@ -34,10 +34,6 @@ export default class extends React.PureComponent<IProps> {
       ...restProps,
     });
 
-    if (!util.isObject(data)) {
-      return null;
-    }
-
     return <Tree {...treeProps}>{this.mapper(data)}</Tree>;
   }
 
