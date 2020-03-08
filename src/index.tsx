@@ -3,7 +3,7 @@ import reduce from 'lodash/reduce';
 import { Input, InputNumber, Switch, Tag, Tree } from 'antd';
 import { TreeProps } from 'antd/lib/tree/Tree.d';
 import util from './util';
-import styles from './styles.css';
+import styles from './styles.less';
 import 'antd/lib/icon/style/css.js';
 import 'antd/lib/input/style/css.js';
 import 'antd/lib/input-number/style/css.js';

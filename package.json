@@ -1,6 +1,6 @@
 {
   "name": "rc-visual-json-editor",
-  "version": "3.0.0",
+  "version": "3.0.1=beta.1",
   "description": "Visual JSON Editor for React base on Ant-Design.",
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -11,16 +11,18 @@
     "start": "umi dev",
     "docs": "npm run build && umi build",
     "test": "umi test --coverage",
-    "build": "npm run build:babel && npm run build:less",
+    "build": "npm run build:father",
+    "build:father": "father build",
     "build:babel": "npx babel src --out-dir lib --extensions \".tsx\",\".ts\"",
     "build:less": "lessc src/styles.less lib/styles.css",
     "build:umi": "umi build",
     "precommit": "lint-staged"
   },
-  "main": "lib/index.js",
   "files": [
-    "lib"
+    "dist"
   ],
+  "main": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
   "dependencies": {},
   "peerDependencies": {
     "antd": "^3.0.0",
@@ -46,6 +48,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.14.2",
+    "father": "^2.29.2",
     "husky": "^0.14.3",
     "jest": "^24.8.0",
     "lessc": "^1.0.2",
