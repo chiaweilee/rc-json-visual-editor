@@ -3,7 +3,7 @@ import reduce from 'lodash/reduce';
 import { Input, InputNumber, Switch, Tag, Tree } from 'antd';
 import { TreeProps } from 'antd/lib/tree/Tree.d';
 import util from './util';
-import styles from './styles.less';
+import './styles.less';
 import 'antd/lib/icon/style/css.js';
 import 'antd/lib/input/style/css.js';
 import 'antd/lib/input-number/style/css.js';
@@ -30,7 +30,7 @@ export default class extends React.PureComponent<IProps> {
   render() {
     const { data, onChange: _, className, ...restProps } = this.props;
     const treeProps = Object.assign(defaultProps, {
-      className: [styles['json-tree'], ...[className]].join(' '),
+      className: ['json-tree', ...[className]].join(' '),
       ...restProps,
     });
 
@@ -123,9 +123,9 @@ export default class extends React.PureComponent<IProps> {
     }
     return {
       title: (
-        <div className={styles['json-tree-item']}>
-          <div className={styles['json-tree-item-label']}>{util.last(keys)}</div>
-          <div className={styles['json-tree-item-content']}>{types.title}</div>
+        <div className={'json-tree-item'}>
+          <div className={'json-tree-item-label'}>{util.last(keys)}</div>
+          <div className={'json-tree-item-content'}>{types.title}</div>
         </div>
       ),
       children: types.children,
