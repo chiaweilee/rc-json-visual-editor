@@ -1,6 +1,6 @@
 {
   "name": "rc-visual-json-editor",
-  "version": "3.0.1-beta.2",
+  "version": "3.0.1-beta.3",
   "description": "Visual JSON Editor for React base on Ant-Design.",
   "scripts": {
     "prepublishOnly": "npm run build",
