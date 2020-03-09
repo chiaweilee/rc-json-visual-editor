@@ -98,7 +98,7 @@ export default class extends React.PureComponent<IProps> {
       // boolean
       return {
         title: (
-          <Switch checkedChildren="true" unCheckedChildren="false" onChange={this.setter(keys)} />
+          <Switch checked={value} checkedChildren="true" unCheckedChildren="false" onChange={this.setter(keys)} />
         ),
       };
     } else if (typeof value === 'object') {
