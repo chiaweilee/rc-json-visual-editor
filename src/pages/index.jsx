@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Component from '../../lib/index';
+import Component from '../../dist/index.esm';
 import data from './data';
 
 export default () => {
@@ -8,7 +8,7 @@ export default () => {
     console.warn(_);
     setD(
       Object.assign({}, _, {
-        a: Math.random(),
+        [Math.floor(Math.random() * 1000)]: Math.random(),
       }),
     );
   };

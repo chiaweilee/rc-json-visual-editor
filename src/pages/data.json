@@ -6,6 +6,7 @@
   "date2": "2020/02/02",
   "date3": "2020-2/2",
   "boolean": true,
+  "false": false,
   "null": null,
   "array": [
     "string",
