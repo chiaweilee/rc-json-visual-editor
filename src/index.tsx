@@ -1,5 +1,6 @@
 import React from 'react';
 import reduce from 'lodash/reduce';
+import keysIn from 'lodash/keysIn';
 import { Input, InputNumber, Switch, Tag, Tree } from 'antd';
 import { TreeProps } from 'antd/lib/tree/Tree.d';
 import util from './util';
@@ -34,7 +35,11 @@ export default class extends React.PureComponent<IProps> {
       ...restProps,
     });
 
-    return <Tree {...treeProps}>{this.mapper(data)}</Tree>;
+    return (
+      <Tree key={keysIn(data).join(',')} {...treeProps}>
+        {this.mapper(data)}
+      </Tree>
+    );
   }
 
   callback = (d: any) => {
@@ -98,7 +103,12 @@ export default class extends React.PureComponent<IProps> {
       // boolean
       return {
         title: (
-          <Switch checked={value} checkedChildren="true" unCheckedChildren="false" onChange={this.setter(keys)} />
+          <Switch
+            checked={value}
+            checkedChildren="true"
+            unCheckedChildren="false"
+            onChange={this.setter(keys)}
+          />
         ),
       };
     } else if (typeof value === 'object') {
