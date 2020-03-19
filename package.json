@@ -14,16 +14,15 @@
     "build": "npm run build:father",
     "build:father": "father build",
     "build:babel": "npx babel src --out-dir lib --extensions \".tsx\",\".ts\"",
-    "build:less": "lessc src/styles.less lib/styles.css",
+    "build:less": "lessc src/styles/rvje.less lib/styles.css",
     "build:umi": "umi build",
     "precommit": "lint-staged"
   },
   "files": [
-    "lib",
-    "es"
+    "dist"
   ],
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "dependencies": {
     "classnames": "^2.2.6"
   },
@@ -67,6 +66,7 @@
     "tslint-eslint-rules": "^5.4.0",
     "typescript": "^3.3.3333",
     "umi": "^2.8.8",
+    "umi-plugin-react": "^1.15.3",
     "umi-plugin-types": "^0.3.2"
   },
   "lint-staged": {

@@ -9,12 +9,11 @@ export default {
       },
     ],
   ],
-  injectCSS: true,
-  extractCSS: true,
-  lessInBabelMode: true,
-  esm: 'babel',
-  cjs: 'babel',
-  autoprefixer: {
-    browsers: ['ie>9', 'Safari >= 6'],
+  cssModules: {
+    generateScopedName: '[name]-[local]',
   },
+  injectCSS: true,
+  lessInBabelMode: true,
+  esm: 'rollup',
+  cjs: 'rollup',
 };

@@ -5,7 +5,7 @@ import keysIn from 'lodash/keysIn';
 import { Input, InputNumber, Switch, Tag, Tree } from 'antd';
 import { TreeProps } from 'antd/lib/tree/Tree.d';
 import util from './util';
-import './styles.less';
+import styles from './styles/rvje.less';
 
 const { TreeNode } = Tree;
 const { TextArea } = Input;
@@ -26,7 +26,7 @@ export default class extends React.PureComponent<IProps> {
   render() {
     const { data, onChange: _, className, ...restProps } = this.props;
     const treeProps = Object.assign(defaultProps, {
-      className: classnames('json-tree', className),
+      className: classnames(styles['json-tree'], className),
       ...restProps,
     });
 
@@ -128,9 +128,9 @@ export default class extends React.PureComponent<IProps> {
     }
     return {
       title: (
-        <div className={classnames('json-tree-item')}>
-          <div className={classnames('json-tree-item-label')}>{util.last(keys)}</div>
-          <div className={classnames('json-tree-item-content')}>{types.title}</div>
+        <div className={classnames(styles['json-tree-item'])}>
+          <div className={classnames(styles['json-tree-item-label'])}>{util.last(keys)}</div>
+          <div className={classnames(styles['json-tree-item-content'])}>{types.title}</div>
         </div>
       ),
       children: types.children,
