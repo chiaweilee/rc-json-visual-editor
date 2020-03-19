@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Component from '../../dist/index.esm';
 import data from './data';
+import Component from '../../lib';
+import '../../lib/styles';
 
 export default () => {
   const [d, setD] = useState(data);
